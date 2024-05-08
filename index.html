@@ -46,21 +46,6 @@
         <a href="#"><i class="fa-brands fa-instagram"></i></a><br>
         <a href="#"><i class="fa-solid fa-phone"></i></a>
     </div>
-    <!-- pop up -->
-    <!-- Example single danger button -->
-    <div class="popup sticky-top">
-        <div class="btn-group">
-        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Today's Special
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Veg Chhatamari</a></li>
-            <li><a class="dropdown-item" href="#">Yamari</a></li>
-            <li><a class="dropdown-item" href="#">Mutton taas</a></li>
-        </ul>
-    </div>
-    </div>
-    
     <section class="carousel-sec">
         <div class="container">
             <div class="row carousel-row">
@@ -118,7 +103,8 @@
                         Reserve now
                     </button>
 
-                    <!-- Modal -->
+
+                    <!-- Modal -1 -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
@@ -157,9 +143,49 @@
                             </div>
                         </div>
                     </div>
+                    <button type="button" class="bnt-1 mx-5" data-bs-toggle="modal" data-bs-target="#exampleModals">
+                        Todays Special
+                    </button>
+                    <!-- Modal -2 -->
+                    <div class="modal fade modal-2" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Order Now</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-evenly gap-2">
+                                        <div class="card col-lg-6" style="width: 18rem;">
+                                            <img src="/image/Chatamari.jpg" class="card-img-top" alt="dish-image">
+                                            <h5 class="card-title text-center">Veg-Chattamari</h5>
+                                        </div>
+                                        <div class="card col-lg-6" style="width: 18rem;">
+                                            <img src="/image/Chatamari.jpg" class="card-img-top" alt="dish-image">
+                                            <h5 class="card-title text-center">Veg-Chattamari</h5>
+                                        </div>
+                                        <div class="card col-lg-6" style="width: 18rem;">
+                                            <img src="/image/Chatamari.jpg" class="card-img-top" alt="dish-image">
+                                            <h5 class="card-title text-center">Veg-Chattamari</h5>
+                                        </div>
+                                        <div class="card col-lg-6" style="width: 18rem;">
+                                            <img src="/image/Chatamari.jpg" class="card-img-top" alt="dish-image">
+                                            <h5 class="card-title text-center">Veg-Chattamari</h5>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <section class="about-us">
         <div class="container">
@@ -360,6 +386,7 @@
             nums.innerText = b;
         }
     });
+    var d =prompt("Enter your name")
 </script>
 <script>
 

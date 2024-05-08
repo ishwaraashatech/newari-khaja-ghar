@@ -118,11 +118,6 @@ nav .nav-logo img {
     color: var(--texts);
     text-decoration: none;
 }
-.popup{
-    display: flex;
-    justify-content:flex-end;
-   
-}
 /* carousel-section */
 .carousel-sec .carousel-1 .carousel {
     height: 350px;
