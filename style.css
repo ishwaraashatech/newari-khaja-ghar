@@ -3,13 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --carousel-sec-title:black;
-    --body-bg:black;
-    --texts:white;
-    --btn-1:goldenrod;
-    --page-f:Briem Hand;
+
+:root {
+    --carousel-sec-title: black;
+    --body-bg: black;
+    --texts: white;
+    --btn-1: goldenrod;
+    --page-f: Briem Hand;
 }
+
 body {
     background-color: black;
 }
@@ -42,7 +44,10 @@ section {
     font-weight: bolder;
     color: var(--texts);
 }
-
+p{
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+}
 /* nav-bar */
 nav .nav-logo {
     height: 90px;
@@ -53,7 +58,7 @@ nav .nav-logo img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color:var(--texts);
+    background-color: var(--texts);
 }
 
 /* nav-hamburger */
@@ -104,7 +109,11 @@ nav .nav-logo img {
     background-color: var(--body-bg);
     height: 100%;
 }
+.mobile-nav a:hover{
+    font-size: 20px;
+    font-weight: bolder;
 
+}
 .mobile-nav.is-active {
     left: 64%;
     margin-top: 80px;
@@ -117,7 +126,9 @@ nav .nav-logo img {
     padding: 12px 16px;
     color: var(--texts);
     text-decoration: none;
+    font-family: Briem Hand;
 }
+
 /* carousel-section */
 .carousel-sec .carousel-1 .carousel {
     height: 350px;
@@ -140,9 +151,11 @@ nav .nav-logo img {
     line-height: 30px;
     margin: 20px 0 0 0;
 }
-.carousel-row .article p{
+
+.carousel-row .article p {
     color: var(--texts);
 }
+
 .carousel-sec .article .bnt-1 {
     border-style: none;
     border: 1px solid rgb(170, 168, 168);
@@ -209,7 +222,9 @@ nav .nav-logo img {
     .social-icon {
         font-size: 15px !important;
     }
-    .about-us .about-content p, .event .event-content p{
+
+    .about-us .about-content p,
+    .event .event-content p {
         display: -webkit-box;
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
@@ -259,17 +274,31 @@ button {
     animation-duration: 1s;
     position: relative;
 }
-@keyframes box{
-    0%{left: 0% ; background-color: rgba(165, 42, 42, 0.384);
+
+@keyframes box {
+    0% {
+        left: 0%;
+        background-color: rgba(165, 42, 42, 0.384);
     }
-    25%{background-color: rgba(165, 42, 42, 0.200);
+
+    25% {
+        background-color: rgba(165, 42, 42, 0.200);
     }
-    50%{background-color: rgba(165, 42, 42, 0.600);
+
+    50% {
+        background-color: rgba(165, 42, 42, 0.600);
     }
-    75%{background-color: rgba(165, 42, 42, 0.800);
+
+    75% {
+        background-color: rgba(165, 42, 42, 0.800);
     }
-    100%{left: 5%; background-color: rgb(165, 42, 42)}
+
+    100% {
+        left: 5%;
+        background-color: rgb(165, 42, 42)
+    }
 }
+
 /* Menu */
 .posts .container .row:nth-child(odd) .text {
     order: 1;
@@ -355,7 +384,7 @@ button {
 }
 
 /* Vintuna */
-.vintuna{
+.vintuna {
     background: rgba(0, 0, 0, 0.4)url(/image/asas.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -388,7 +417,20 @@ button {
     color: var(--texts);
     border: 1px solid var(--texts);
 }
-
+.vintuna .vintuna-btn-1:hover {
+    background-color: brown;
+    color: var(--texts);
+    animation-name: box;
+    animation-duration: 1s;
+    position: relative;
+}
+.vintuna .vintuna-btn-2:hover {
+    background-color: brown;
+    color: var(--texts);
+    animation-name: box;
+    animation-duration: 1s;
+    position: relative;
+}
 .social-icon {
     border-radius: 0 20px 20px 0;
     font-size: 30px;
@@ -396,11 +438,21 @@ button {
     margin-top: 100px;
     z-index: 98;
 }
+
 /* poup */
-.positive .minus , .plus , .negative .minuss , .pluss{
-  cursor: pointer;
+.positive .minus,
+.plus,
+.negative .minuss,
+.pluss {
+    cursor: pointer;
 }
-.positive .minus , .num , .plus , .negative .minuss , .nums , .pluss{
+
+.positive .minus,
+.num,
+.plus,
+.negative .minuss,
+.nums,
+.pluss {
     padding: 0 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
