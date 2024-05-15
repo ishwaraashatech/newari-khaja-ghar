@@ -10,6 +10,7 @@
     --texts: white;
     --btn-1: goldenrod;
     --page-f: Briem Hand;
+    --bg:var(--bg);
 }
 
 body {
@@ -53,12 +54,14 @@ nav .nav-logo {
     height: 90px;
     width: 90px;
 }
-
+nav{
+    background-color: var(--body-bg);
+}
 nav .nav-logo img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background-color: var(--texts);
+    /* background-color: var(--texts); */
 }
 
 /* nav-hamburger */
@@ -262,12 +265,12 @@ button {
 .about-us .about-content .about-btn {
     background-color: var(--texts);
     border: var(--texts);
-    color: brown;
+    color:var(--bg);
     padding: 10px;
 }
 
 .about-us .about-content .about-btn:hover {
-    background-color: brown;
+    background-color:var(--bg);
     color: var(--texts);
     border-radius: 25px;
     animation-name: box;
@@ -349,12 +352,12 @@ button {
 .event .event-content .event-btn {
     background-color: var(--texts);
     border: var(--texts);
-    color: brown;
+    color:var(--bg);
     padding: 10px;
 }
 
 .event .event-content .event-btn:hover {
-    background-color: brown;
+    background-color:var(--bg);
     color: var(--texts);
     border-radius: 25px;
     animation-name: box;
@@ -384,20 +387,23 @@ button {
 }
 
 /* Vintuna */
-.vintuna {
-    background: rgba(0, 0, 0, 0.4)url(/image/asas.jpg);
+/* .vintuna {
+    background: rgba(0, 0, 0, 0.4)url(/image/bc-img.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 500px;
     background-blend-mode: darken;
+} */
+.vintuna video{
+    width: 100%;
+    
 }
-
-.vintuna .row {
+/* .vintuna .row {
     justify-content: space-between;
 }
 
 .vintuna .row .col-lg-4 {
-    margin-top: 200px;
+    margin-top: 230px;
 }
 
 .vintuna .vintuna-btn-1 {
@@ -418,19 +424,19 @@ button {
     border: 1px solid var(--texts);
 }
 .vintuna .vintuna-btn-1:hover {
-    background-color: brown;
+    background-color:var(--bg);
     color: var(--texts);
     animation-name: box;
     animation-duration: 1s;
     position: relative;
 }
 .vintuna .vintuna-btn-2:hover {
-    background-color: brown;
+    background-color:var(--bg);
     color: var(--texts);
     animation-name: box;
     animation-duration: 1s;
     position: relative;
-}
+} */
 .social-icon {
     border-radius: 0 20px 20px 0;
     font-size: 30px;
